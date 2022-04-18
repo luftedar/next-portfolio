@@ -1,0 +1,30 @@
+.nav {
+  background: #4b4b4bef;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  padding: 5px 20px;
+  transition: 0.5s ease-out;
+}
+
+.nav ul li:hover {
+  background-color: #fff;
+  color: #4b4b4bef;
+}
