@@ -1,12 +1,15 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Home from './Home';
 
-const Layout = () => (
-  <div>
+const Layout = ({children}) => (
+  <>
     <Navbar />
-    <Home />
-  </div>
+    <div>
+      <main>
+        {children}
+      </main>
+    </div>
+  </>
 );
 
 export default Layout;
