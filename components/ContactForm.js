@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import validate from '../helpers/contactFormValidator';
 
 const ContactForm = () => {
+  const [submitDisable, setSubmitDisable] = useState(true);
   const formik = useFormik({
     initialValues: {
       fullName: '',
@@ -14,6 +15,11 @@ const ContactForm = () => {
       alert(JSON.stringify(values, null, 2));
     }
   });
+  console.log(formik);
+  useEffect(() => {
+    if(formik.errors === {})
+    setSubmitDisable(false)
+  }, [formik.values])
   return (
     <form 
       action="https://formspree.io/f/xnqwoaww"
@@ -56,7 +62,7 @@ const ContactForm = () => {
         </textarea>
         {(formik.touched.description && formik.errors.description) && <div>{formik.errors.description}</div>}
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" disabled={submitDisable}>Submit</button>
     </form>
   )
 }
