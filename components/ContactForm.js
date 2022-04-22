@@ -17,10 +17,10 @@ const ContactForm = () => {
   return (
     <form>
       <div>
-        <label htmlFor="fullname">Full Name</label>
+        <label htmlFor="fullName">Full Name</label>
         <input
-          id="fullname"
-          name="fullname"
+          id="fullName"
+          name="fullName"
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -50,7 +50,6 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           value={formik.values.description}
           >
-          Please add description here...
         </textarea>
         {(formik.touched.description && formik.errors.description) && <div>{formik.errors.description}</div>}
       </div>

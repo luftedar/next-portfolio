@@ -16,6 +16,12 @@ const validate = values => {
     errors.email = 'Invalid Email Adress';
   }
 
+  if(!values.description) {
+    errors.description = 'Required';
+  } else if (description.length < 10) {
+    errors.description = 'Description Should be More than 10 Characters';
+  }
+
   return errors;
 }
 

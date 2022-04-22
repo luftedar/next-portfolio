@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import ContactForm from '../components/ContactForm';
 
 const contact = () => {
   return (
@@ -6,6 +7,7 @@ const contact = () => {
       <div>
       <h2>Hey! Let's get in touch</h2>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <ContactForm />
       </div>
     </div>
   )
