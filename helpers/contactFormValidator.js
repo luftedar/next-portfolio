@@ -4,10 +4,12 @@ const validate = values => {
     errors.fullName = 'Required';
   } else if (values.fullName.split(" ").length !== 2) {
     errors.fullName = 'Please Enter Your Full Name';
-  } else if (values.fullName.length < 3) {
+  } else if (values.fullName.split(" ").join("").length <= 3) {
     errors.fullName = 'Full Name Should be Three Characters at Least';
   } else if (values.fullName.length > 60) {
     errors.fullname = 'Full Name Should be Less then 60 Characters';
+  } else if (/\d/.test(values.fullName)) {
+    errors.fullName = 'Name Should not Contain Number'
   }
 
   if(!values.email) {
