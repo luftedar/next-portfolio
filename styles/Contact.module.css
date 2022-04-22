@@ -1,0 +1,34 @@
+.contact {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 200px;
+  color: #5c5c5cf1;
+}
+
+.contact h2 {
+  font-size: 40px;
+}
+
+.contact p {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact > *:nth-child(2) > * {
+  margin: 45px;
+}
+
+.contact > *:nth-child(2) div a {
+  background-color: rgb(86, 136, 86);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: 500;
+  margin: 50px;
+  color: #fff;
+}

@@ -24,4 +24,5 @@
 
 .form div textarea {
   width: 100%;
+  resize: none;
 }
