@@ -1,38 +1,41 @@
-import React from 'react'
+import React from 'react';
+import ProjectList from '../components/ProjectList';
 
-const projects = ({userInfo}) => {
-  console.log(userInfo);
+export default function projects({apiResults}) {
+  console.log(apiResults);
   return (
-    <div>projects</div>
+    <div>
+      <section>
+        <h1>Projects</h1>
+        <ProjectList apiResults={apiResults} />
+      </section>
+    </div>
   )
 }
-// getServerSideProps
-// getStaticPaths
+
 export const getStaticProps = async () => {
-  const userInfo = [];
-  await fetch("https://api.github.com/user/repos?per_page=100", {
+  const res = await fetch("https://api.github.com/user/repos?per_page=100", {
     'method': 'GET',
     'headers': {
       'Content-Type': 'application/json',
       'Authorization': `token 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`,
     }
-  }).then(res => res.json()).then(data => data.forEach((x) => {
-    if(x.owner.login === 'luftedar') {
-      console.log(x.topics)
-      userInfo.push({
-        url: x.git_url,
-        name: x.name,
-        language: x.language,
-        topics: x.topics
-      })
-    }
-  }));
+  });
+  const apiResults = await res.json();
   return {
     props: {
-      userInfo
+      apiResults: apiResults.filter((project) => {
+        return project.owner.login === 'luftedar'
+        && project.topics.length !== 0})
+        .map((project) => {
+        return {
+          id: project.id,
+          url: project.git_url,
+          name: project.name,
+          language: project.language,
+          topics: project.topics
+        }
+      })
     }
   };
-}
-
-
-export default projects;
+};

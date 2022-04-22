@@ -6,14 +6,9 @@ import Layout from '../components/Layout';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component pageProps={pageProps} />
+      <Component {...pageProps} />
     </Layout>
   );
 }
-
-MyApp.propTypes = {
-  pageProps: PropTypes.shape({}),
-  Component: PropTypes.elementType,
-};
 
 export default MyApp;
