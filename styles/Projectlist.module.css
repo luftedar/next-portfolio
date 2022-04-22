@@ -5,4 +5,6 @@
   gap: 15px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+  margin: 50px 200px;
+  text-align: center;
 }

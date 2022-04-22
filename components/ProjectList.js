@@ -4,11 +4,11 @@ import projectList from '../styles/Projectlist.module.css';
 
 const ProjectList = ({projects}) => {
   return (
-    <main className={projectList.grid}>
+    <div className={projectList.grid}>
       {projects.map(project => 
       <ProjectItem project={project} key={project.id} />
       )}
-    </main>
+    </div>
   )
 }
 
