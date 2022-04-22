@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
         .map((project) => {
         return {
           id: project.id,
-          url: project.git_url,
+          url: project.html_url,
           name: project.name,
           language: project.language,
           topics: project.topics

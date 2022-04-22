@@ -15,7 +15,7 @@ const home = () => {
         <h4>Git | Github | Rspec | Jest | Responsive Design | Accessibility </h4>
         <h5>Pair Programming | Team Work | Remote Work</h5>
       </section>
-      <Link href="/Projects">See My Projects</Link>
+      <Link href="/projects">See My Projects</Link>
     </div>
   )
 }
