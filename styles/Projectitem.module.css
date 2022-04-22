@@ -3,11 +3,9 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #5c5c5cf1;
-  color: #fff;
+  color: #5c5c5cf1;
   padding-bottom: 20px;
 }
 
@@ -20,4 +18,14 @@
 
 .card h3 {
   font-size: 20px;
+}
+
+.card > *:nth-child(1) {
+  height: 70%;
+}
+
+.card > *:nth-child(2) {
+  width: 100%;
+  height: 40%;
+  margin-top: 1.5rem;
 }
