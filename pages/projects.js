@@ -2,12 +2,11 @@ import React from 'react';
 import ProjectList from '../components/ProjectList';
 
 export default function projects({apiResults}) {
-  console.log(apiResults);
   return (
     <div>
       <section>
         <h1>Projects</h1>
-        <ProjectList apiResults={apiResults} />
+        <ProjectList projects={apiResults} />
       </section>
     </div>
   )

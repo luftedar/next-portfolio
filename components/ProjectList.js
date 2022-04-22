@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import ProjectItem from './ProjectItem';
 
-const ProjectList = () => {
+const ProjectList = ({projects}) => {
   return (
-    <div>ProjectList</div>
+    <div>
+      {projects.map(project => 
+      <ProjectItem project={project} key={project.id} />
+      )}
+    </div>
   )
 }
 
