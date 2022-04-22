@@ -1,18 +1,23 @@
 .card {
   border: 1px solid #5c5c5cf1;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #5c5c5cf1;
-  padding: 35px;
+  text-align: center;
+  background-color: #5c5c5cf1;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
 .card img {
-  width: 20%;
-  max-width: 20%;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  height: 100%;
 }
 
 .card h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
