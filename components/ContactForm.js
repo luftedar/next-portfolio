@@ -15,7 +15,10 @@ const ContactForm = () => {
     }
   });
   return (
-    <form>
+    <form 
+      action="https://formspree.io/f/xnqwoaww"
+      method="POST"
+    >
       <div>
         <label htmlFor="fullName">Full Name</label>
         <input
