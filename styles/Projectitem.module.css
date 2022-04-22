@@ -1,0 +1,18 @@
+.card {
+  border: 1px solid #5c5c5cf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5c5c5cf1;
+  padding: 35px;
+}
+
+.card img {
+  width: 20%;
+  max-width: 20%;
+}
+
+.card h3 {
+  font-size: 25px;
+}
