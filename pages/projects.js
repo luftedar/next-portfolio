@@ -1,13 +1,14 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
+import projectStyles from '../styles/Project.module.css';
 
 export default function projects({apiResults}) {
   return (
     <div>
-      <section>
+      <header className={projectStyles.header}>
         <h1>Projects</h1>
         <ProjectList projects={apiResults} />
-      </section>
+      </header>
     </div>
   )
 }
