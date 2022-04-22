@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import validate from '../helpers/contactFormValidator';
+import formStyles from '../styles/Contactform.module.css'
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -18,6 +19,7 @@ const ContactForm = () => {
     <form 
       action="https://formspree.io/f/xnqwoaww"
       method="POST"
+      className={formStyles.form}
     >
       <div>
         <label htmlFor="fullName">Full Name</label>
