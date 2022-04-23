@@ -26,7 +26,11 @@ export const getStaticProps = async () => {
     props: {
       apiResults: apiResults.filter((project) => {
         return project.owner.login === 'luftedar'
-        && project.topics.length !== 0})
+        && project.topics.length !== 0 
+        && project.name !== 'decode-morse-code'
+        && project.name !== 'hello-rails'
+        && project.name !== 'hello-react-rails'
+      })
         .map((project) => {
         return {
           id: project.id,
