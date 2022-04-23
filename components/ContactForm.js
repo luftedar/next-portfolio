@@ -58,7 +58,10 @@ const ContactForm = () => {
         </textarea>
         {(formik.touched.description && formik.errors.description) && <div>{formik.errors.description}</div>}
       </div>
-      <button type="submit" disabled={!(formik.isValid && formik.dirty)}>Submit</button>
+      <button type="submit"
+      disabled={!(formik.isValid && formik.dirty)}
+      className={!(formik.isValid && formik.dirty)
+      ? (formStyles.disabledButton) : (formStyles.activeButton)}>Submit</button>
     </form>
   )
 }

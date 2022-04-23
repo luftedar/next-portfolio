@@ -42,3 +42,14 @@
   font-size: 20px;
   padding: 5px;
 }
+
+.disabledButton {
+  background-color: #5c5c5cad;
+  color: #fff;
+  border: none;
+}
+
+.activeButton {
+  background-color: rgb(86, 136, 86);
+  border: none;
+}
