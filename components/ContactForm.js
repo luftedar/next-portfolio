@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import validate from '../helpers/contactFormValidator';
-import formStyles from '../styles/Contactform.module.css'
+import formStyles from '../styles/Contactform.module.css';
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -11,12 +11,12 @@ const ContactForm = () => {
       description: '',
     },
     validate,
-    onSubmit: values => {
+    onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
-    }
+    },
   });
   return (
-    <form 
+    <form
       action="https://formspree.io/f/xnqwoaww"
       method="POST"
       className={formStyles.form}
@@ -30,8 +30,8 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.fullName}
-          />
-          {(formik.touched.fullName && formik.errors.fullName) && <div>{formik.errors.fullName}</div>}
+        />
+        {(formik.touched.fullName && formik.errors.fullName) && <div>{formik.errors.fullName}</div>}
       </div>
       <div>
         <label htmlFor="email">Email Adress</label>
@@ -43,27 +43,31 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           value={formik.values.email}
         />
-        {(formik.touched.email && formik.errors.email) && <div>{formik.errors.email}</div>}        
+        {(formik.touched.email && formik.errors.email) && <div>{formik.errors.email}</div>}
       </div>
       <div>
         <label htmlFor="description">Description</label>
-        <textarea name="description"
+        <textarea
+          name="description"
           id="description"
-          cols="30" 
+          cols="30"
           rows="10"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.description}
-          >
-        </textarea>
+        />
         {(formik.touched.description && formik.errors.description) && <div>{formik.errors.description}</div>}
       </div>
-      <button type="submit"
-      disabled={!(formik.isValid && formik.dirty)}
-      className={!(formik.isValid && formik.dirty)
-      ? (formStyles.disabledButton) : (formStyles.activeButton)}>Submit</button>
+      <button
+        type="submit"
+        disabled={!(formik.isValid && formik.dirty)}
+        className={!(formik.isValid && formik.dirty)
+          ? (formStyles.disabledButton) : (formStyles.activeButton)}
+      >
+        Submit
+      </button>
     </form>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
