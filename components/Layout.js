@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-const Layout = ({children}) => (
+const Layout = ({ children }) => (
   <>
     <Navbar />
     <main>
