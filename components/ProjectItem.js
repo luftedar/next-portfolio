@@ -1,5 +1,6 @@
 import React from 'react';
 import projectItem from '../styles/Projectitem.module.css';
+import TopicTag from './TopicTag';
 
 const ProjectItem = ({ project }) => (
   <div className={projectItem.card}>
@@ -10,7 +11,7 @@ const ProjectItem = ({ project }) => (
       <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
       {/* <p>{project.url}</p> */}
       <p>{project.language}</p>
-      {project.topics.map((topic, index) => <span>{topic}{' '}</span>)}
+      {project.topics.map((topic, index) => <TopicTag topic={topic} key={index} />)}
     </div>
   </div>
 );

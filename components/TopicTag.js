@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopicTag = () => {
   return (
-    <div>TopicTag</div>
+    <span>TopicTag</span>
   )
 }
 
