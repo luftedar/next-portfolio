@@ -1,8 +1,9 @@
 import React from 'react'
+import topicStyles from '../styles/Topictag.module.css'
 
-const TopicTag = () => {
+const TopicTag = ({topic}) => {
   return (
-    <span>TopicTag</span>
+    <span className={topicStyles.topic}>{topic}</span>
   )
 }
 
