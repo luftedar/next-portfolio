@@ -1,0 +1,9 @@
+@import 'nprogress/nprogress.css';
+
+#nprogress .bar {
+  height: 8px;
+}
+
+#nprogress .spinner .spinner-icon {
+  color: #fff;
+}
