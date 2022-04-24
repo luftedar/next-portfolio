@@ -20,11 +20,6 @@ const Navbar = () => (
           Contact
         </Link>
       </li>
-      <li>
-        <Link href="/about">
-          About Me
-        </Link>
-      </li>
     </ul>
   </nav>
 );
