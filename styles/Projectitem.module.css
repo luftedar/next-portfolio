@@ -1,19 +1,30 @@
 .card {
-  border: 1px solid #5c5c5cf1;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #5c5c5cf1;
+  color: #fff;
   padding-bottom: 20px;
+  position: relative;
+  height: 350px;
+  background-color: #5c5c5c6b;
+}
+
+.card:nth-child(1) {
+  position: relative;
 }
 
 .card img {
+  position: absolute;
   width: 100%;
   max-width: 100%;
   border-radius: 15px;
   height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .card h3 {
