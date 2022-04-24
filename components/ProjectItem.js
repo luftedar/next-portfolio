@@ -10,7 +10,7 @@ const ProjectItem = ({ project }) => (
       <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
       {/* <p>{project.url}</p> */}
       <p>{project.language}</p>
-      <p>{project.topics}</p>
+      {project.topics.map((topic, index) => <span>{topic}{' '}</span>)}
     </div>
   </div>
 );
