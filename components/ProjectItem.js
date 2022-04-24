@@ -8,9 +8,11 @@ const ProjectItem = ({ project }) => (
       <img src={`https://raw.githubusercontent.com/luftedar/${project.name}/master/app_screenshot.png`} alt="" />
     </div>
     <div>
-      <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
-      {/* <p>{project.url}</p> */}
-      <p>{project.language}</p>
+      <div>
+        <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
+        {/* <p>{project.url}</p> */}
+        <p>{project.language}</p>
+      </div>
       <div className='topic-container'>
         {project.topics.map((topic, index) => <TopicTag topic={topic} key={index} />)}
       </div>
