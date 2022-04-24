@@ -11,7 +11,9 @@ const ProjectItem = ({ project }) => (
       <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
       {/* <p>{project.url}</p> */}
       <p>{project.language}</p>
-      {project.topics.map((topic, index) => <TopicTag topic={topic} key={index} />)}
+      <div className='topic-container'>
+        {project.topics.map((topic, index) => <TopicTag topic={topic} key={index} />)}
+      </div>
     </div>
   </div>
 );

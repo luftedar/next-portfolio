@@ -29,3 +29,7 @@
   height: 40%;
   margin-top: 1.5rem;
 }
+
+.card > *:nth-child(2) div {
+  margin-top: 15px;
+}
