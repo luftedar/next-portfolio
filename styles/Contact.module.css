@@ -4,9 +4,11 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  margin: 0 200px;
-  color: #5c5c5cf1;
+  color: #fff;
   font-style: italic;
+  background: url("../public/tcpic.png") center center no-repeat;
+  background-color: #4b4b4b;
+  background-size: cover;
 }
 
 .contact h2 {

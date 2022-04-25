@@ -17,7 +17,7 @@ const contact = () => (
     </div>
     <div>
       <h1>Fill the form to meet</h1>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   </div>
 );

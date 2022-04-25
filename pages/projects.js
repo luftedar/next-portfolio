@@ -1,11 +1,10 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
-import projectStyles from '../styles/Project.module.css';
 
 export default function projects({ apiResults }) {
   return (
     <div>
-      <header className={projectStyles.header}>
+      <header>
         <ProjectList projects={apiResults} />
       </header>
     </div>
