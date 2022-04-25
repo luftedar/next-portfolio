@@ -1,5 +1,5 @@
 .nav {
-  background: #5c5c5cf1;
+  background: rgb(86, 136, 86);
   color: #fff;
   font-size: 24px;
   display: flex;
@@ -25,9 +25,4 @@
   border-radius: 60px;
   padding: 5px 20px;
   transition: 0.5s ease-out;
-}
-
-.nav ul li:hover {
-  background-color: #fff;
-  color: #4b4b4bef;
 }

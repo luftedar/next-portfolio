@@ -21,3 +21,21 @@ main {
   width: 100%;
   height: 90vh;
 }
+
+.active {
+  background-color: #fff;
+  color: rgb(86, 136, 86);
+  border-radius: 60px;
+  padding: 5px 20px;
+}
+
+.passive {
+  transition: 0.5s ease-out;
+}
+
+.passive:hover {
+  background-color: #fff;
+  color: rgb(86, 136, 86);
+  border-radius: 60px;
+  padding: 5px 20px;
+}
