@@ -1,6 +1,5 @@
 import React from 'react';
 import Topic from './Topic';
-import ProjectLanguage from './ProjectLanguage';
 import projectItem from '../styles/Projectitem.module.css';
 
 const ProjectItem = ({ project }) => {
@@ -27,7 +26,6 @@ const ProjectItem = ({ project }) => {
         <div>
           <Topic topic={topicItems}/>
         </div>
-        {/* <ProjectLanguage language={project.language}/> */}
         <a href={project.url} target="_blank">Source</a>
       </div>
     </div>
