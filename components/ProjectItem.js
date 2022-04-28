@@ -1,4 +1,5 @@
 import React from 'react';
+import Topic from './Topic';
 import projectItem from '../styles/Projectitem.module.css';
 
 const ProjectItem = ({ project }) => {
@@ -14,7 +15,7 @@ const ProjectItem = ({ project }) => {
         <h3>{project.name.split('-').join(' ').toUpperCase()}</h3>
         <p>{project.language}</p>
         <div>
-          {topicItems}
+          <Topic topic={topicItems}/>
         </div>
         <a href={project.url} target="_blank">Source</a>
       </div>

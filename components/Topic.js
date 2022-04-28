@@ -1,8 +1,9 @@
 import React from 'react'
+import topicStyles from '../styles/Topic.module.css'
 
 const Topic = ({topic}) => {
   return (
-    <span>{topic}</span>
+    <div className={topicStyles.topic}>{topic}</div>
   )
 }
 
