@@ -5,7 +5,7 @@ import contactStyles from '../styles/Contact.module.css';
 const contact = () => (
   <div className={contactStyles.contact}>
     <div>
-      <h2>Hey! Let`&apos;`s get in touch</h2>
+      <h2>Hey! Let&apos;s get in touch</h2>
       <p>
         {' '}
         I can help you build a product ,

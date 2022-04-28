@@ -53,7 +53,7 @@ const ContactForm = () => {
       </div>
       <div>
         <label htmlFor="description">
-          Description
+          Message
           <textarea
             name="description"
             id="description"
