@@ -6,7 +6,6 @@ export default function projects({ apiResults }) {
   return (
     <div>
       <header className={projectStyles.header}>
-        <h1>Projects</h1>
         <ProjectList projects={apiResults} />
       </header>
     </div>

@@ -6,11 +6,12 @@
 }
 
 .form button {
-  width: 100%;
+  width: 50%;
   border: 1px solid #5c5c5cf1;
   border-radius: 15px;
   font-size: 20px;
   margin-top: 5px;
+  padding: 10px;
 }
 
 .form label {
@@ -30,7 +31,7 @@
   border: 1px solid #5c5c5cf1;
   width: 100%;
   border-radius: 15px;
-  padding: 5px;
+  padding: 13px 13px;
   font-size: 20px;
 }
 
@@ -44,12 +45,13 @@
 }
 
 .disabledButton {
-  background-color: #5c5c5cad;
+  background-color: #5c5c5cf1;
   color: #fff;
   border: none;
 }
 
 .activeButton {
-  background-color: rgb(86, 136, 86);
+  background-color: #2cdf58f1;
+  color: #fff;
   border: none;
 }
