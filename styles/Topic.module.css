@@ -8,6 +8,7 @@
   border-radius: 12px;
   color: rgb(238, 238, 238);
   margin: 5px;
+  font-size: 10px;
 }
 
 .topic > *:nth-child(6) {

@@ -27,7 +27,7 @@ export const getStaticProps = async () => {
         return project.owner.login === 'luftedar'
         && project.topics.length !== 0 
         && project.name !== 'decode-morse-code'
-        && project.name !== 'hello-rails'
+        && project.name !== 'hellorails'
         && project.name !== 'hello-react-rails'
       }).map((project) => {
         return {

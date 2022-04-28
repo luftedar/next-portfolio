@@ -1,15 +1,22 @@
-import React from 'react'
+import React from 'react';
+import langStyles from '../styles/ProjectLanguage.module.css';
 
 const ProjectLanguage = ({language}) => {
   const langColor = {
-    html: '#e34c26',
-    ruby: '#e34c26',
-    javascript: '#f0db4f',
-    plpgsql: '#008bb9',
+    HTML: '#e34c26',
+    Ruby: '#e34c26',
+    JavaScript: '#f0db4f',
+    PLpgSQL: '#008bb9',
   };
-  console.log(language);
+  console.log(langColor[language]);
   return (
-    <div style={`background-color:{${langColor.language}}`}>{language}</div>
+    <p
+    className={langStyles.language}
+    style={
+      {backgroundColor: langColor[language]}      
+    }
+    >
+      {language}</p>
   )
 }
 
