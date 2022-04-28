@@ -19,7 +19,10 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "ignorePatterns": [
     "dist/",

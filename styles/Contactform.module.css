@@ -17,6 +17,7 @@
 .form label {
   font-size: 25px;
   margin-top: 5px;
+  width: 100%;
 }
 
 .form div {

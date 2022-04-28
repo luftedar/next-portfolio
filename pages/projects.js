@@ -23,20 +23,17 @@ export const getStaticProps = async () => {
   const apiResults = await res.json();
   return {
     props: {
-      apiResults: apiResults.filter((project) => {
-        return project.owner.login === 'luftedar'
-        && project.topics.length !== 0 
+      apiResults: apiResults.filter((project) => project.owner.login === 'luftedar'
+        && project.topics.length !== 0
         && project.name !== 'decode-morse-code'
         && project.name !== 'hellorails'
-        && project.name !== 'hello-react-rails'
-      }).map((project) => {
-        return {
-          id: project.id,
-          url: project.html_url,
-          name: project.name,
-          language: project.language,
-          topics: project.topics,
-        }})
-    }
-  }
+        && project.name !== 'hello-react-rails').map((project) => ({
+        id: project.id,
+        url: project.html_url,
+        name: project.name,
+        language: project.language,
+        topics: project.topics,
+      })),
+    },
+  };
 };
