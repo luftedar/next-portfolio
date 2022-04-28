@@ -1,5 +1,4 @@
 .grid {
-  height: 80vh;
   display: grid;
   justify-content: space-between;
   gap: 15px;
