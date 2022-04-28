@@ -30,6 +30,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.fullName}
+          className = {(formik.touched.fullName && formik.errors.fullName) && "error-input" }
         />
         {(formik.touched.fullName && formik.errors.fullName) && <div>{formik.errors.fullName}</div>}
       </div>
@@ -42,6 +43,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}
+          className = {(formik.touched.email && formik.errors.email) && "error-input" }
         />
         {(formik.touched.email && formik.errors.email) && <div>{formik.errors.email}</div>}
       </div>
@@ -55,6 +57,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.description}
+          className = {(formik.touched.description && formik.errors.description) && "error-input" }
         />
         {(formik.touched.description && formik.errors.description) && <div>{formik.errors.description}</div>}
       </div>

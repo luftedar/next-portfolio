@@ -28,15 +28,18 @@
 }
 
 .form div input {
-  border: 1px solid #5c5c5cf1;
   width: 100%;
   border-radius: 15px;
   padding: 13px 13px;
   font-size: 20px;
 }
 
+.form div textarea:focus,
+.form div input:focus {
+  outline: none;
+}
+
 .form div textarea {
-  border: 1px solid #5c5c5cf1;
   width: 100%;
   resize: none;
   border-radius: 15px;

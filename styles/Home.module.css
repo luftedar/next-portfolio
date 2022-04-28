@@ -25,6 +25,11 @@
   line-height: 60px;
   font-weight: 700;
   color: #fff;
+  transition: 0.5s;
+}
+
+.main a:hover {
+  background-color: #22b948f1;
 }
 
 .main section h1 {
