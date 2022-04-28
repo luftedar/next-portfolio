@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'token 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',
+      Authorization: 'token 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',
     },
   });
   const apiResults = await res.json();
