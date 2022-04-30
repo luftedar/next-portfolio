@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
 import projectStyles from '../styles/Project.module.css';
-import secretKey from '../.env';
+import secretKeyProvider from '../.env';
 
 export default function projects({ apiResults }) {
   return (
@@ -14,15 +14,25 @@ export default function projects({ apiResults }) {
 }
 
 export const getStaticProps = async () => {
-  const token = secretKey;
-  const res = await fetch('https://api.github.com/user/repos?per_page=100', {
+  const res2 = await secretKeyProvider().then(secretKey => {
+    const res3 = fetch('https://api.github.com/user/repos?per_page=100', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `token ${token}`,
+      Authorization: `token ${secretKey.token}`,
     },
+  })
+  return res3;
   });
-  const apiResults = await res.json();
+  // console.log(res2);
+  // const res = await fetch('https://api.github.com/user/repos?per_page=100', {
+  //   method: 'GET',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     Authorization: `token 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`,
+  //   },
+  // });
+  const apiResults = await res2.json();
   return {
     props: {
       apiResults: apiResults.filter((project) => project.owner.login === 'luftedar'
