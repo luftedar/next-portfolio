@@ -32,6 +32,10 @@
   background-color: #22b948f1;
 }
 
+.main > *:nth-child(2) > *:nth-child(2) {
+  margin: 0 0 100px 0;
+}
+
 .main section h1 {
   font-size: 60px;
 }
@@ -46,11 +50,11 @@
 }
 
 .main section h4 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main section h5 {
-  font-size: 27px;
+  font-size: 35px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
