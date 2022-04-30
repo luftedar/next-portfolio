@@ -5,7 +5,7 @@ import homeStyles from '../styles/Home.module.css';
 const home = () => (
   <div className={homeStyles.main}>
     <section>
-      <h1>Hello My Name is Orçun</h1>
+      <h1>Hey there. I’m Orçun</h1>
       <h2>I am a full-stack web developer</h2>
     </section>
     <section>
