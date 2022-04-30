@@ -14,15 +14,15 @@ export default function projects({ apiResults }) {
 }
 
 export const getStaticProps = async () => {
-  const res2 = await secretKeyProvider().then(secretKey => {
+  const res2 = await secretKeyProvider().then((secretKey) => {
     const res3 = fetch('https://api.github.com/user/repos?per_page=100', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `token ${secretKey.token}`,
-    },
-  })
-  return res3;
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `token ${secretKey.token}`,
+      },
+    });
+    return res3;
   });
   // console.log(res2);
   // const res = await fetch('https://api.github.com/user/repos?per_page=100', {
