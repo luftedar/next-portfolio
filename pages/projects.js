@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
 import projectStyles from '../styles/Project.module.css';
+import secretKey from '../.env';
 
 export default function projects({ apiResults }) {
   return (
@@ -13,11 +14,12 @@ export default function projects({ apiResults }) {
 }
 
 export const getStaticProps = async () => {
+  const token = secretKey;
   const res = await fetch('https://api.github.com/user/repos?per_page=100', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'token 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',
+      Authorization: `token ${token}`,
     },
   });
   const apiResults = await res.json();
