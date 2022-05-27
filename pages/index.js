@@ -1,9 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Home from '../components/Home';
+import styles from '../styles/Home.module.scss'
 
 const home = () => (
-  <div>
-    <Link href="/projects">See My Projects</Link>
+  <div className={styles.home}>
+    <Home />
   </div>
 );
 
