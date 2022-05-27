@@ -1,0 +1,32 @@
+@import "variables";
+
+.navbar {
+  @extend %display-flex;
+  background-color: $navbar-navy;
+  width: 100%;
+  height: 101px;
+  align-items: center;
+  justify-content: space-around;
+  color: $white-main;
+  font-weight: $font-weight-500;
+  position: sticky;
+  top: 0;
+
+  div {
+    ul {
+      @extend %display-flex;
+      gap: 50px;
+      line-height: 24.38px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: $white-main;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
