@@ -1,12 +1,11 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
-import projectStyles from '../styles/Project.module.css';
 import secretKeyProvider from '../.env';
 
 export default function projects({ apiResults }) {
   return (
     <div>
-      <header className={projectStyles.header}>
+      <header>
         <ProjectList projects={apiResults} />
       </header>
     </div>
@@ -40,12 +39,12 @@ export const getStaticProps = async () => {
         && project.name !== 'decode-morse-code'
         && project.name !== 'hellorails'
         && project.name !== 'hello-react-rails').map((project) => ({
-        id: project.id,
-        url: project.html_url,
-        name: project.name,
-        language: project.language,
-        topics: project.topics,
-      })),
+          id: project.id,
+          url: project.html_url,
+          name: project.name,
+          language: project.language,
+          topics: project.topics,
+        })),
     },
   };
 };

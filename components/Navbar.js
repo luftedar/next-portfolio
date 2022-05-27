@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import navbarStyles from '../styles/Navbar.module.css';
 
 const Navbar = () => (
-  <nav className={navbarStyles.nav}>
+  <nav>
     <ul>
       <li>
         <Link href="/">

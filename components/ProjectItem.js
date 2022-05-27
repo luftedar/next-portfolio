@@ -1,6 +1,5 @@
 import React from 'react';
 import Topic from './Topic';
-import projectItem from '../styles/Projectitem.module.css';
 
 const ProjectItem = ({ project }) => {
   const topicItems = project.topics.map((topic, index) => (
@@ -17,10 +16,9 @@ const ProjectItem = ({ project }) => {
   };
   return (
     <div
-      className={projectItem.card}
       style={
-      { border: `1px solid ${langColor[project.language]}` }
-    }
+        { border: `1px solid ${langColor[project.language]}` }
+      }
     >
       <div>
         <img src={`https://raw.githubusercontent.com/luftedar/${project.name}/master/app_screenshot.png`} alt="" />

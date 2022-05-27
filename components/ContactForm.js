@@ -1,7 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import validate from '../helpers/contactFormValidator';
-import formStyles from '../styles/Contactform.module.css';
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -19,7 +18,6 @@ const ContactForm = () => {
     <form
       action="https://formspree.io/f/xnqwoaww"
       method="POST"
-      className={formStyles.form}
     >
       <div>
         <label htmlFor="fullName">
@@ -31,7 +29,6 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.fullName}
-            className={(formik.touched.fullName && formik.errors.fullName) && 'error-input'}
           />
           {(formik.touched.fullName && formik.errors.fullName) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.fullName}</div>}
         </label>
@@ -46,7 +43,6 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className={(formik.touched.email && formik.errors.email) && 'error-input'}
           />
           {(formik.touched.email && formik.errors.email) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.email}</div>}
         </label>
@@ -62,7 +58,6 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.description}
-            className={(formik.touched.description && formik.errors.description) && 'error-input'}
           />
           {(formik.touched.description && formik.errors.description) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.description}</div>}
         </label>
@@ -70,8 +65,6 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={!(formik.isValid && formik.dirty)}
-        className={!(formik.isValid && formik.dirty)
-          ? (formStyles.disabledButton) : (formStyles.activeButton)}
       >
         Submit
       </button>

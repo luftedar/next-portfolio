@@ -1,9 +1,8 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
-import contactStyles from '../styles/Contact.module.css';
 
 const contact = () => (
-  <div className={contactStyles.contact}>
+  <div>
     <div>
       <h2>Hey! Let&apos;s get in touch</h2>
       <p>
