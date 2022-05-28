@@ -8,9 +8,9 @@ const index = () => (
     <header>
       <Home />
     </header>
-    <section>
+    <main>
       <About />
-    </section>
+    </main>
   </div>
 );
 
