@@ -35,3 +35,31 @@ $font-weight-800: 800;
   align-items: center;
   justify-content: center;
 }
+
+%header {
+  border-bottom: 1px solid $black-main;
+  padding-bottom: 20px;
+  width: 325px;
+  position: relative;
+}
+
+%header-after {
+  content: '';
+  border-bottom: 5px solid $black-main;
+  width: 85px;
+  bottom: -3px;
+  position: absolute;
+}
+
+%skill-bar {
+  width: 646px;
+  background: linear-gradient(90deg, #282828 28.48%, #1B1A36 50.68%, #2A2864 77.31%, rgba(196, 195, 202, 0.29) 105.96%), linear-gradient(90deg, #000000 45.61%, #130EF0 96.13%);
+  border-radius: 30px;
+  list-style: none;
+  color: $white-main;
+  font-size: 3rem;
+  font-weight: $font-weight-500;
+  line-height: 22px;
+  padding: 25px 40px;
+  margin: 35px 0;
+}

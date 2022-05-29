@@ -37,17 +37,10 @@
       width: 100%;
 
       hgroup {
-        border-bottom: 1px solid $black-main;
-        padding-bottom: 20px;
-        width: 325px;
-        position: relative;
+        @extend %header;
 
         &::after {
-          content: '';
-          border-bottom: 5px solid $black-main;
-          width: 85px;
-          bottom: -3px;
-          position: absolute;
+          @extend %header-after;
         }
 
         h2 {
