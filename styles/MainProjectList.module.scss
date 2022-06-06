@@ -1,0 +1,10 @@
+@import "variables";
+
+.mainProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 42px;
+  margin: 0 auto;
+  max-width: 60%;
+  position: relative;
+}
