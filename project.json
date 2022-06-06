@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "projectName": "Translator",
+    "gitHub": "https: //github.com/luftedar/astronaut",
+    "liveDemo": "https: //translatorastronaut.netlify.app/",
+    "tags": [
+      "React",
+      "Redux",
+      "Sass"
+    ],
+    "img": "/1.png"
+  },
+  {
+    "id": 2,
+    "projectName": "Drummers Summit",
+    "gitHub": "https: //github.com/luftedar/capstone-project-1",
+    "liveDemo": " https: //luftedar.github.io/capstone-project-1/",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "img": "/2.png"
+  },
+  {
+    "id": 3,
+    "projectName": "Calculator",
+    "gitHub": "https: //github.com/luftedar/math-magician",
+    "liveDemo": "https: //luftedar.github.io/math-magician/",
+    "tags": [
+      "React",
+      "React Route",
+      "JavaScript"
+    ],
+    "img": "/3.png"
+  },
+  {
+    "id": 4,
+    "projectName": "Rick and Morty and Orçun",
+    "gitHub": "https: //github.com/luftedar/rickandmorty",
+    "liveDemo": "https: //rickandmortyandorcun.netlify.app/",
+    "tags": [
+      "React",
+      "Redux",
+      "Redux Persistor"
+    ],
+    "img": "/4.png"
+  },
+  {
+    "id": 5,
+    "projectName": "Currency Convertor",
+    "gitHub": "https: //github.com/luftedar/currency-converter",
+    "liveDemo": "Not Available due to Limited API",
+    "tags": [
+      "RoR",
+      "Sass",
+      "Postgresql",
+      "Rake"
+    ],
+    "img": "/5.png"
+  },
+  {
+    "id": 6,
+    "projectName": "Budget Tracker",
+    "gitHub": "https: //github.com/luftedar/budget-app",
+    "liveDemo": "https: //thawing-crag-46611.herokuapp.com",
+    "tags": [
+      "RoR",
+      "Authentication",
+      "Authorization"
+    ],
+    "img": "/6.png"
+  }
+]
