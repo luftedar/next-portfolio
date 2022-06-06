@@ -15,7 +15,7 @@
     "id": 2,
     "projectName": "Drummers Summit",
     "gitHub": "https: //github.com/luftedar/capstone-project-1",
-    "liveDemo": " https: //luftedar.github.io/capstone-project-1/",
+    "liveDemo": "https: //luftedar.github.io/capstone-project-1/",
     "tags": [
       "HTML",
       "CSS",
@@ -51,7 +51,7 @@
     "id": 5,
     "projectName": "Currency Convertor",
     "gitHub": "https: //github.com/luftedar/currency-converter",
-    "liveDemo": "Not Available due to Limited API",
+    "liveDemo": false,
     "tags": [
       "RoR",
       "Sass",

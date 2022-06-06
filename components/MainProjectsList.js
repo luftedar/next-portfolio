@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MainProjectItem } from './MainProjectItem';
-import projects from '../project.js';
 
 const MainProjectsList = () => {
-  const projectObject = [];
+  const [projectsState, setProjectsState] = useState([])
   useEffect(() => {
-    projectObject = await fetch(``)
-  });
+    fetch(`../projects.json`).then((res) => res.json())
+      .then((data) => setProjectsState(data))
+  }, []);
   return (
     <ul>
-      <MainProjectItem />
+      {projectsState.map((project) => (
+        <MainProjectItem
+          project={project}
+          key={project.id} />
+      ))}
     </ul>
   )
 }
