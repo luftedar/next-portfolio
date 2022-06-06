@@ -2,8 +2,8 @@
   {
     "id": 1,
     "projectName": "Translator",
-    "gitHub": "https: //github.com/luftedar/astronaut",
-    "liveDemo": "https: //translatorastronaut.netlify.app/",
+    "gitHub": "https://github.com/luftedar/astronaut",
+    "liveDemo": "https://translatorastronaut.netlify.app/",
     "tags": [
       "React",
       "Redux",
@@ -14,8 +14,8 @@
   {
     "id": 2,
     "projectName": "Drummers Summit",
-    "gitHub": "https: //github.com/luftedar/capstone-project-1",
-    "liveDemo": "https: //luftedar.github.io/capstone-project-1/",
+    "gitHub": "https://github.com/luftedar/capstone-project-1",
+    "liveDemo": "https://luftedar.github.io/capstone-project-1/",
     "tags": [
       "HTML",
       "CSS",
@@ -26,8 +26,8 @@
   {
     "id": 3,
     "projectName": "Calculator",
-    "gitHub": "https: //github.com/luftedar/math-magician",
-    "liveDemo": "https: //luftedar.github.io/math-magician/",
+    "gitHub": "https://github.com/luftedar/math-magician",
+    "liveDemo": "https://luftedar.github.io/math-magician/",
     "tags": [
       "React",
       "React Route",
@@ -38,8 +38,8 @@
   {
     "id": 4,
     "projectName": "Rick and Morty and Orçun",
-    "gitHub": "https: //github.com/luftedar/rickandmorty",
-    "liveDemo": "https: //rickandmortyandorcun.netlify.app/",
+    "gitHub": "https://github.com/luftedar/rickandmorty",
+    "liveDemo": "https://rickandmortyandorcun.netlify.app/",
     "tags": [
       "React",
       "Redux",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "projectName": "Currency Convertor",
-    "gitHub": "https: //github.com/luftedar/currency-converter",
+    "gitHub": "https://github.com/luftedar/currency-converter",
     "liveDemo": false,
     "tags": [
       "RoR",
@@ -63,8 +63,8 @@
   {
     "id": 6,
     "projectName": "Budget Tracker",
-    "gitHub": "https: //github.com/luftedar/budget-app",
-    "liveDemo": "https: //thawing-crag-46611.herokuapp.com",
+    "gitHub": "https://github.com/luftedar/budget-app",
+    "liveDemo": "https://thawing-crag-46611.herokuapp.com",
     "tags": [
       "RoR",
       "Authentication",

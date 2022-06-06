@@ -1,0 +1,72 @@
+@import "variables";
+
+.mainProjectItem {
+  list-style: none;
+  position: relative;
+
+  article {
+
+    img {
+      width: 326px;
+      height: 350px;
+    }
+
+    &:hover>div {
+      width: 100%;
+      height: 350px;
+      opacity: 80%;
+      transform: rotateY(360);
+      border-radius: 0;
+      top: 0;
+    }
+
+    div {
+      margin: 0 !important;
+      position: absolute;
+      @extend %display-flex-col;
+      @extend %display-flex-center;
+      top: 50%;
+      background-color: $black-main;
+      transition: .5s ease-in-out;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      transform: rotateY(0);
+      border-radius: 100%;
+
+      ul {
+        color: $white-main;
+        @extend %display-flex;
+
+
+        li {
+          list-style: none;
+          margin: 8px 5px;
+          font-size: 1.1rem;
+          font-weight: $font-weight-700;
+        }
+      }
+
+
+      h2 {
+        color: $white-main;
+        font-size: 2.3rem;
+      }
+
+      section {
+        margin-top: 10px;
+
+        a {
+          color: $white-main;
+          margin: 10px;
+          font-size: 1.8rem;
+          font-weight: $font-weight-600;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
