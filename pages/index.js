@@ -2,7 +2,7 @@ import React from 'react';
 import About from '../components/About';
 import Home from '../components/Home';
 import Skills from '../components/Skills';
-import Projects from '../components/Projects';
+import MainProjects from '../components/MainProjects';
 import styles from '../styles/Index.module.scss';
 
 const index = () => (
@@ -17,7 +17,7 @@ const index = () => (
       <Skills />
     </section>
     <section>
-      <Projects />
+      <MainProjects />
     </section>
   </div>
 );

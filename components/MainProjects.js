@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import MainProjectsList from './MainProjectsList';
+import styles from '../styles/MainProjects.module.scss';
 
-const Projects = () => {
+const MainProjects = () => {
   return (
-    <div>
+    <div className={styles.mainProjects}>
       <hgroup>
         <h2>My <span><p>Projects</p></span></h2>
       </hgroup>
@@ -13,11 +14,11 @@ const Projects = () => {
       </article>
       <div>
         <button>See All Projects <span>
-          <Image src="/see-more.png" width="14px" height="14px" />
+          <Image src="/Refresh.png" width="30px" height="30px" />
         </span></button>
       </div>
     </div>
   )
 }
 
-export default Projects
+export default MainProjects

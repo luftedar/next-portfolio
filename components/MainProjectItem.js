@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const MainProjectItem = ({ project }) => {
-  console.log('Bura', project)
   return (
     <li>
       <img src={project.img} alt={project.projectName} />
