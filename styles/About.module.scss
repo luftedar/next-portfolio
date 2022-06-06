@@ -7,15 +7,17 @@
   background-size: 100%;
   background-color: $grey-main;
   position: relative;
+  @extend %display-flex;
+  justify-content: center;
 
   article:first-child {
     @extend %display-flex;
     margin: auto;
     gap: 124px;
     position: absolute;
-    top: 68px;
-    left: 628px;
-    right: 188px;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 150px;
 
     figure {
       position: relative;
@@ -79,7 +81,7 @@
       }
 
       div {
-        margin-top: 36px;
+        margin-top: 15px;
 
         button {
           color: $white-main;
