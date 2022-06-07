@@ -1,0 +1,13 @@
+@import "variables";
+
+.mobileNavBar {
+  position: sticky;
+  padding: 15px 25px;
+  display: none;
+  background-color: $navbar-navy;
+  z-index: 15;
+
+  @include breakpoints(1007px) {
+    display: block;
+  }
+}

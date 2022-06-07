@@ -1,6 +1,10 @@
 @import "variables";
 
 .navbar {
+  @include breakpoints(1007px) {
+    display: none;
+  }
+
   @extend %display-flex;
   background-color: $navbar-navy;
   width: 100%;
