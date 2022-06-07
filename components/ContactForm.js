@@ -16,7 +16,7 @@ const ContactForm = () => {
     },
   });
   return (
-    <div className={styles.contactForm}>
+    <div className={styles.contactForm} id="contact">
       <section>
         <hgroup>
           <h2><span><p>GET IN </p></span> Touch</h2>

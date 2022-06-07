@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <article>
         <figure>
           <Image src="/profile-pic.png"

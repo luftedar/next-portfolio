@@ -5,7 +5,7 @@ import styles from '../styles/MainProjects.module.scss';
 
 const MainProjects = () => {
   return (
-    <div className={styles.mainProjects}>
+    <div className={styles.mainProjects} id="projects">
       <hgroup>
         <h2>My <span><p>Projects</p></span></h2>
       </hgroup>
