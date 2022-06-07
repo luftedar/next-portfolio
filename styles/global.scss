@@ -15,3 +15,169 @@
 .show {
   @extend %skill-bar;
 }
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.get-container {
+  @extend %display-flex;
+  height: 450px;
+
+  .get-info {
+    @extend %display-flex-col;
+    gap: 40px;
+    flex: 1;
+    margin-top: 50px;
+
+    h5 {
+      font-weight: $font-weight-400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .get-form {
+    flex: 3;
+
+    form {
+      @extend %display-flex-col;
+
+      .input-container {
+        @extend %display-flex;
+        justify-content: space-between !important;
+        width: 100%;
+        gap: 50px;
+
+        input {
+          padding: 10px 25px 34px 5px;
+          border: none;
+          border-bottom: 1px solid $input-border;
+          background-color: $grey-main;
+          font-weight: $font-weight-400;
+          line-height: 24.38px;
+          font-size: 2rem;
+        }
+
+        #fullName {
+          flex: 3;
+        }
+
+        #email {
+          flex: 5;
+        }
+      }
+
+      textarea {
+        width: 100% !important;
+        height: 250px;
+        padding: 15px 25px 34px 5px;
+        border: none;
+        border-bottom: 1px solid $input-border;
+        background-color: $grey-main;
+        font-weight: $font-weight-400;
+        line-height: 24.38px;
+        font-size: 2rem;
+        resize: none;
+        margin: 15px 0px;
+      }
+
+      button {
+        width: 30%;
+        height: 50px;
+        border: 1px solid;
+        color: $white-main;
+        text-decoration: none;
+        border-radius: 5px;
+        backdrop-filter: blur(40px);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: $font-weight-600;
+        padding: 0 40px;
+        transition: 1s ease-in-out;
+      }
+
+      .bad-button {
+        background: $navbar-navy;
+      }
+
+      .good-button {
+        background: $landing-button-bg;
+        border-image-source: linear-gradient(95.52deg, rgba(251, 255, 61, 0.4) 13.83%, rgba(60, 111, 112, 0) 104.31%);
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+.required {
+  position: relative;
+
+  .i-1,
+  .i-2 {
+    position: absolute;
+    top: -15px;
+    color: red;
+    font-size: 1.5rem;
+  }
+
+  .i-2 {
+    left: 41%;
+  }
+
+  .i-3 {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    color: red;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

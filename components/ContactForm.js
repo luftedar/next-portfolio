@@ -22,18 +22,18 @@ const ContactForm = () => {
           <h2><span><p>GET IN </p></span> Touch</h2>
         </hgroup>
         <div>
-          <div>
-            <article>
+          <div className='get-container'>
+            <article className='get-info'>
               <h5>Antalya / Turkey</h5>
               <h5>ugurorcun91@gmail.com</h5>
               <h5>+90 554 436 00 39</h5>
             </article>
-            <article>
+            <article className='get-form'>
               <form
                 action="https://formspree.io/f/xnqwoaww"
                 method="POST"
               >
-                <div>
+                <div className='input-container required'>
                   <input
                     id="fullName"
                     name="fullName"
@@ -43,7 +43,7 @@ const ContactForm = () => {
                     value={formik.values.fullName}
                     placeholder='Full Name Here'
                   />
-                  {(formik.touched.fullName && formik.errors.fullName) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.fullName}</div>}
+                  {(formik.touched.fullName && formik.errors.fullName) && <div className='error-tooltip i-1'>{formik.errors.fullName}</div>}
                   <input
                     id="email"
                     name="email"
@@ -53,23 +53,23 @@ const ContactForm = () => {
                     value={formik.values.email}
                     placeholder='E-mail Here'
                   />
-                  {(formik.touched.email && formik.errors.email) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.email}</div>}
+                  {(formik.touched.email && formik.errors.email) && <div className='error-tooltip i-2'>{formik.errors.email}</div>}
                 </div>
-                <div>
+                <div className='required'>
                   <textarea
                     name="description"
                     id="description"
-                    cols="30"
-                    rows="10"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.description}
+                    placeholder="Your Massage"
                   />
-                  {(formik.touched.description && formik.errors.description) && <div style={{ color: 'red', fontSize: '12px' }}>{formik.errors.description}</div>}
+                  {(formik.touched.description && formik.errors.description) && <div className='error-tooltip i-3'>{formik.errors.description}</div>}
                 </div>
                 <button
                   type="submit"
                   disabled={!(formik.isValid && formik.dirty)}
+                  className={!(formik.isValid && formik.dirty) ? 'bad-button' : 'good-button'}
                 >
                   Submit
                 </button>

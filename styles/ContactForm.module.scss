@@ -40,29 +40,9 @@
         justify-content: space-evenly;
         gap: 5px;
 
-        &>*:first-child {
-          width: 15% !important;
-        }
-
         article {
           width: 100%;
-
-          form {
-            @extend %display-flex-col;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-            &>*:first-child {
-              @extend %display-flex;
-              width: 100%;
-
-              input {
-                width: 100%;
-              }
-            }
-          }
         }
-
       }
     }
   }

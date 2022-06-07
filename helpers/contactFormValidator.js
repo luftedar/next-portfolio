@@ -2,7 +2,7 @@ const validate = (values) => {
   const errors = {};
   if (!values.fullName) {
     errors.fullName = 'Required';
-  } else if (values.fullName.split(' ').length !== 2) {
+  } else if (values.fullName.split(' ').length < 1) {
     errors.fullName = 'Please Enter Your Full Name';
   } else if (values.fullName.split(' ').join('').length <= 3) {
     errors.fullName = 'Full Name Should be Three Characters at Least';
